@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://056d90.coding-pages.com/</id>
+    <id>https://azurelau.github.io</id>
     <title>9月的故事</title>
-    <updated>2020-01-21T11:28:00.770Z</updated>
+    <updated>2020-01-21T11:32:57.178Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://056d90.coding-pages.com/"/>
-    <link rel="self" href="https://056d90.coding-pages.com/atom.xml"/>
+    <link rel="alternate" href="https://azurelau.github.io"/>
+    <link rel="self" href="https://azurelau.github.io/atom.xml"/>
     <subtitle>闲云野鹤相对游，同行碧空各自愁。清风拂面闲云走，别过酷夏奔晚秋。</subtitle>
-    <logo>https://056d90.coding-pages.com/images/avatar.png</logo>
-    <icon>https://056d90.coding-pages.com/favicon.ico</icon>
+    <logo>https://azurelau.github.io/images/avatar.png</logo>
+    <icon>https://azurelau.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 9月的故事</rights>
     <entry>
         <title type="html"><![CDATA[菜心和着一碗面而已]]></title>
-        <id>https://056d90.coding-pages.com/post/cai-xin</id>
-        <link href="https://056d90.coding-pages.com/post/cai-xin">
+        <id>https://azurelau.github.io/post/cai-xin</id>
+        <link href="https://azurelau.github.io/post/cai-xin">
         </link>
         <updated>2020-01-16T11:04:20.000Z</updated>
     </entry>
