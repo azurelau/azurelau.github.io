@@ -4,11 +4,10 @@
     <meta charset="utf-8" >
 
 <title>菜心和着一碗面而已 | 9月的故事</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://azurelau.github.io/favicon.ico?v=1579607200864">
+<link rel="shortcut icon" href="https://azurelau.github.io/favicon.ico?v=1579667794793">
 <link rel="stylesheet" href="https://azurelau.github.io/styles/main.css">
 
 
@@ -17,6 +16,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
     <meta name="description" content="如果你愿意一层一层一层地剥开我的心，你会发现，你会惊讶，你是我最压抑，最深处的秘密。（阿信）
 
@@ -30,7 +30,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://azurelau.github.io">
-        <img src="https://azurelau.github.io/images/avatar.png?v=1579607200864" class="site-logo">
+        <img src="https://azurelau.github.io/images/avatar.png?v=1579667794793" class="site-logo">
         <h1 class="site-title">9月的故事</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -88,7 +88,7 @@
   </div>
 </div>
 
-
+    
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
@@ -145,15 +145,15 @@
               </div>
             
             
-
+    
             
-
+    
           </div>
-
+    
         </div>
       </div>
     </div>
-
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="application/javascript">
 
@@ -175,3 +175,12 @@ var app = new Vue({
 
   </body>
 </html>
+
+<div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'zP5bvMUHOsPJIS0owkXmaprt-gzGzoHsz',
+            appKey: '<EuUD8IQkh5onE8HarHjYNyYD>'
+        })
+    </script>
