@@ -11,6 +11,7 @@
 
 
 
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <meta name="description" content="如果你愿意一层一层一层地剥开我的心，你会发现，你会惊讶，你是我最压抑，最深处的秘密。（阿信）
 
 故事说：有一天，有人问一位老先生，太阳和月亮哪个比较重要。那位老先生想了半天，回答道：“是月亮，月亮比较重要。”“为什么？”“因为月亮是在夜晚发..." />
@@ -140,9 +141,9 @@
         </div>
 
         
-
+    
         
-
+    
         <div class="site-footer">
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
   <a class="rss" href="https://azurelau.github.io/atom.xml" target="_blank">
@@ -152,12 +153,12 @@
 
       </div>
     </div>
-
+    
     <script>
       hljs.initHighlightingOnLoad()
-
+    
       let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
+    
       // This should probably be throttled.
       // Especially because it triggers during smooth scrolling.
       // https://lodash.com/docs/4.17.10#throttle
@@ -166,10 +167,10 @@
       //    _.throttle(doThatStuff, 100);
       // });
       // Only not doing it here to keep this Pen dependency-free.
-
+    
       window.addEventListener("scroll", event => {
         let fromTop = window.scrollY;
-
+    
         mainNavLinks.forEach((link, index) => {
           let section = document.getElementById(decodeURI(link.hash).substring(1));
           let nextSection = null
@@ -191,7 +192,16 @@
           }
         });
       });
-
+    
     </script>
   </body>
 </html>
+
+<div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'zP5bvMUHOsPJIS0owkXmaprt-gzGzoHsz',
+            appKey: 'EuUD8IQkh5onE8HarHjYNyYD'
+        })
+    </script>
