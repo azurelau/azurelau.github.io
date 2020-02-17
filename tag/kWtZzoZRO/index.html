@@ -1,131 +1,75 @@
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>
-    诗歌 | 9月的故事
-</title>
-<link rel="shortcut icon" href="https://ismr.vip/favicon.ico?v=1581943709940">
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>9月的故事</title>
+<link rel="shortcut icon" href="https://ismr.vip/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://ismr.vip/media/css/tailwind.css">
 <link rel="stylesheet" href="https://ismr.vip/styles/main.css">
-<!-- js -->
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://ismr.vip/media/js/jquery.sticky-sidebar.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<link rel="alternate" type="application/atom+xml" title="9月的故事 - Atom Feed" href="https://ismr.vip/atom.xml">
 
+    
 
+  <meta name="description" content="闲云野鹤相对游，
+同行碧空各自愁；
+清风拂面闲云走，
+别过酷夏奔晚秋。" />
 </head>
-
 <body>
-    <div class="main">
-        <div class="header">
-    <div class="nav">
-        <div class="logo">
-            <a href="https://ismr.vip">
-                <img class="avatar" src="https://ismr.vip/images/avatar.png?v=1581943709940" alt="">
-            </a>
-            <div class="site-title">
-                <h1>
-                    9月的故事
-                </h1>
-            </div>
-        </div>
-        <span class="menu-btn fa fa-align-justify"></span>
-        <div class="menu-container">
-            <ul>
-                
-                    
-                            <li>
-                                <a href="/" class="menu">
-                                    首页
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/archives" class="menu">
-                                    归档
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/tags" class="menu">
-                                    标签
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/post/about" class="menu">
-                                    关于
-                                </a>
-                            </li>
-                            
-                                
-            </ul>
-        </div>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
     </div>
+  </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
+    
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
+    
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
+    
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
+    
+    <a href="https://ismr.vip/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
 </div>
 
-<script>
-    $(document).ready(function() {
-        $(".menu-btn").click(function() {
-            $(".menu-container").slideToggle();
-        });
-        $(window).resize(function() {
-
-            if (window.matchMedia('(min-width: 960px)').matches) {
-                $(".menu-container").css('display', 'block')
-            } else {
-                $(".menu-container").css('display', 'none')
-            }
-
-        });
-    });
-</script>
-
-            <div id="main-content" class="post-container main-container">
-                <div id="content" class="main-container-left">
-                    
-    <div class="i-card">
-        <b>标签：#
-        诗歌</b>
-    </div>
-    
+    <div class="max-w-4xl w-full mx-auto pt-32">
+      <h1 class="text-2xl font-bold pb-8 flex justify-center items-center">
+        <i class="ri-hashtag"></i>
+        诗歌
+      </h1>
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
         
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://ismr.vip/post/cong-qian-xian-zai/">
-                        从前，现在
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2020-02-17</time>
-                    
-                        <a href="https://ismr.vip/tag/kWtZzoZRO/" class="post-tag i-tag
-                            i-tag-warning">
-            #诗歌
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://ismr.vip/post/cong-qian-xian-zai/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          从前，现在
         </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                        <a href="https://ismr.vip/post/cong-qian-xian-zai/" class="post-feature-image" style="background-image:url(https://ismr.vip/post-images/cong-qian-xian-zai.jpg) ">
-                        </a>
-                        
-                            <div class="post-content">
-                                
-                                        <div class="post-content-content">
-                                            从前总以为，
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-02-17</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        从前总以为，
 只要自己真诚，
 就会赢得坦诚。
 后来却发现，
@@ -139,122 +83,27 @@
 不是所有的梦都如你所求。
 从前总以为，
 只要自己努力，
-就会有所改变。
-后来却发现，
-世事难料，
-不是所有的事都如你所愿。
-从前总以为，
-只要自己乐善，
-就会有益旁人。
-后来却发现，
-蛇会吞象，
-不是所有的爱都如你所想。
-从前总以为，
-只要自己仗义，
-就会兄弟相帮。
-后来却发现，
-人走茶凉，
-不是所有的谊都如你所谋。
-从前总以为，
-只要自己顽强，
-就会跨过坎沟。
-后来却发现，
-雨随云游，
-不是所有的风都如你所候。
-
-从前的我的确天真，
-现在想起来都觉得傻到丢。
-人家附身应和的顺口秀，
-我便顺着杆子往上搝。
-现在的我依然是我，
-心地不赖也不再轴。
-不再哼哼“让我欢喜让我忧”，
-埋着头独自泪流独自去忍受。
-没忘却从前经历过什么，
-不在乎眼前是喜还是忧。
-没忘却从前失去过什么，
-不在乎眼前是多事之秋。
-懂得了自己的人生，
-必须自己去走。
-明白了自己的伤疤，
-得由自己去疚。
-不再依赖任何人，
-不揪心于天下事。
-田地自己耕自个儿锄，
-何苦翘首美梦苍天秀？
-激扬文字功底甚是忧，
-当不懈努力方才不丢丑。
-指点迷津我鼠辈那能诌，
-江山自有英才擎神州。
-
-                                        </div>
-                                        
-                                            <a class="btn btn-text" href="https://ismr.vip/post/cong-qian-xian-zai/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-                <!-- 翻页 -->
-                
-                </div>
-                <!--  -->
-                <div class="main-container-middle"></div>
-                <!--  -->
-                <div id="sidebar" class="main-container-right">
-
-                    <!-- 个人信息 -->
-                    
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://ismr.vip/images/avatar.png?v=1581943709940)">
-        </div>
-        <h1 class="id_card-title">
-            9月的故事
-        </h1>
-        <h2 class="id_card-description">
-            闲云野鹤相对游，
-同行碧空各自愁；
-清风拂面闲云走，
-别过酷夏奔晚秋。
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
-
-        </div>
+就会有所改变。...
+      </div>
+      <a href="https://ismr.vip/post/cong-qian-xian-zai/" class="btn">
+        阅读更多
+      </a>
     </div>
     
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://ismr.vip/post-images/cong-qian-xian-zai.jpg" alt="从前，现在">
+    
+  </div>
+  
+      </div>
 
-                        <!-- 公告栏 -->
-                        
-
-                </div>
-            </div>
-
-
-
-            <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://ismr.vip/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
+      
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</footer>
 
     </div>
-    <script>
-        $('#sidebar').stickySidebar({
-            topSpacing: 80,
-            // bottomSpacing: 60
-        });
-    </script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://ismr.vip/media/scripts/main.js"></script>
 </body>
-
 </html>
