@@ -82,7 +82,7 @@
 
         </div>
         <!-- Share to Twitter, Weibo, Telegram -->
-        <div class="flex items-center">
+       <!--  <div class="flex items-center">
           <div class="mr-4 flex items-center">
             <i class="ri-share-forward-line text-gray-500"></i>
           </div>
@@ -96,10 +96,28 @@
             <i class="ri-telegram-line"></i>
           </div>
         </div>
-      </div>
+      </div> -->
 
       
 
+      
+        <div id="vlaine-comment"></div>
+<script type="application/javascript" src="https://unpkg.com/valine"></script>
+<script type="application/javascript">
+  new Valine({
+    el: '#vlaine-comment',
+    appId: 'zP5bvMUHOsPJIS0owkXmaprt-gzGzoHsz',
+    appKey: 'EuUD8IQkh5onE8HarHjYNyYD',
+    pageSize: 10,
+    notify: true,
+    avatar: 'mp',
+    verify: false,
+    placeholder: '来都来了，不妨评论一下',
+    visitor: true,
+    highlight: false,
+    recordIP: true,
+  })
+</script>
       
 
       <footer class="py-12 text-center px-4 md:px-0" v-pre>
