@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ismr.vip</id>
     <title>9月的故事</title>
-    <updated>2020-02-18T01:50:54.533Z</updated>
+    <updated>2020-02-18T01:56:02.354Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ismr.vip"/>
     <link rel="self" href="https://ismr.vip/atom.xml"/>
@@ -19,13 +19,6 @@
         <link href="https://ismr.vip/post/nian-lai-de-ci-jiu-ying-xin-sui/">
         </link>
         <updated>2020-02-18T01:49:15.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[捻来的辞旧迎岁]]></title>
-        <id>https://ismr.vip/post/nian-lai-de-ci-jiu-ying-sui/</id>
-        <link href="https://ismr.vip/post/nian-lai-de-ci-jiu-ying-sui/">
-        </link>
-        <updated>2020-02-18T01:34:50.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[漫行黄麻]]></title>
